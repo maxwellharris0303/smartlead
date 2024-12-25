@@ -1,0 +1,13 @@
+<div data-bind="css: { 'inline-block': true }, externalCss: { 'button-item': true }" class="inline-block button-item ext-button-item">
+    <input type="button" id="btnAskLater" class="win-button button-secondary button ext-button secondary ext-secondary" data-bind="
+        attr: { 'id': secondaryButtonId || 'idBtn_Back' },
+        externalCss: {
+            'button': true,
+            'secondary': true },
+        value: secondaryButtonText() || str['CT_HRD_STR_Splitter_Back'],
+        ariaDescribedBy: secondaryButtonDescribedBy,
+        hasFocus: focusOnSecondaryButton,
+        click: secondaryButton_onClick,
+        clickBubble: !svr.fEnableLivePreview,
+        enable: isSecondaryButtonEnabled" value="Ask later">
+</div>
